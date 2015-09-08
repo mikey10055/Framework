@@ -1,0 +1,92 @@
+/* Forms, Buttons and Inputs
+  @authers - Michael Thomas
+*/
+
+form {}
+
+input[type="text"], input[type="password"], input[type="date"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="month"], input[type="week"],
+input[type="email"], input[type="number"],
+input[type="search"], input[type="tel"],
+input[type="time"], input[type="url"],
+textarea {
+  display:block;
+  box-sizing: border-box;
+  width:100%;
+  max-width: 100%;
+  min-height:30px;
+  margin: 8px 0px;
+  padding:2px 10px;
+  border:1px solid #c8c8c8;
+  border-radius: 2px;
+
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="month"]:focus, input[type="week"]:focus,
+input[type="email"]:focus, input[type="number"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus,
+input[type="time"]:focus, input[type="url"]:focus,
+textarea:focus {
+outline:#FFB718 solid 1px;
+border-radius:2px;
+}
+
+textarea {
+  min-height:100px;
+}
+
+button, .button {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcb5b+0,ffb617+50,ffae00+100 */
+background: #ffcb5b; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffcb5b 0%, #ffb617 50%, #ffae00 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcb5b), color-stop(50%,#ffb617), color-stop(100%,#ffae00)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffcb5b 0%,#ffb617 50%,#ffae00 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffcb5b 0%,#ffb617 50%,#ffae00 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffcb5b 0%,#ffb617 50%,#ffae00 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffcb5b 0%,#ffb617 50%,#ffae00 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb5b', endColorstr='#ffae00',GradientType=0 ); /* IE6-9 */
+
+  padding:5px 10px;
+  border:1px solid #FFB617;
+  color:#ffffff;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+button:hover, .button:hover {
+
+}
+button:active, .button:active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffae00+0,ffb617+50,ffcb5b+100,ffcb5b+101 */
+    background: #ffae00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffae00 0%, #ffb617 50%, #ffcb5b 100%, #ffcb5b 101%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffae00), color-stop(50%,#ffb617), color-stop(100%,#ffcb5b), color-stop(101%,#ffcb5b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffae00', endColorstr='#ffcb5b',GradientType=0 ); /* IE6-9 */
+
+    outline: #FFB718 solid 1px;
+}
+button:focus, .button:focus {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffae00+0,ffb617+50,ffcb5b+100,ffcb5b+101 */
+    background: #ffae00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffae00 0%, #ffb617 50%, #ffcb5b 100%, #ffcb5b 101%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffae00), color-stop(50%,#ffb617), color-stop(100%,#ffcb5b), color-stop(101%,#ffcb5b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffae00 0%,#ffb617 50%,#ffcb5b 100%,#ffcb5b 101%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffae00', endColorstr='#ffcb5b',GradientType=0 ); /* IE6-9 */
+    outline: #FFB718 solid 1px;
+}
+.button { display: inline-block; text-align:center;}
+
+.button.tiny { font-size: 0.6rem; }
+.button.small { font-size: 0.7rem; }
+.button.medium { font-size: 0.8rem; }
+.button.large { font-size: 1.2rem;}
+.button.extended { width:100%;}

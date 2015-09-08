@@ -1,0 +1,8 @@
+#temp_con { max-width:400px; margin:0px auto; width:100%;}
+
+/* Reauired for all
+    @authers - Michael Thomas
+*/
+
+body { margin:0px; padding:0px; font-size:100%; position:relative;}
+* { box-sizing: border-box;}

@@ -1,0 +1,15 @@
+/* Colors Helper
+  @authers - Michael Thomas
+*/
+
+.bg-red { background-color: #FF0000;}
+.bg-grn { background-color: #00FF00;}
+.bg-blu { background-color: #0000FF;}
+.bg-blk { background-color: #000000;}
+.bg-wht { background-color: #FFFFFF;}
+
+.txt-red { color: #FF0000;}
+.txt-grn { color: #00FF00;}
+.txt-blu { color: #0000FF;}
+.txt-blk { color: #000000;}
+.txt-wht { color: #FFFFFF;}
