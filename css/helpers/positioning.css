@@ -1,0 +1,10 @@
+/* Positioning helper
+    @authers - Michael Thomas
+*/
+
+.left { float:left;}
+.right { float:right;}
+
+.absolute { position: absolute;}
+.fixed { position: fixed;}
+.relative { position: relative;}

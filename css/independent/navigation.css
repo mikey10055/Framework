@@ -1,0 +1,24 @@
+/* Navigation
+    @authers - Michael Thomas
+*/
+.contain-to-grid { width:100%; background:#000000;}
+.contain-to-grid nav.top-nav{ max-width:80rem; margin:0px auto;}
+
+nav.top-nav { width:100%; overflow:auto; background:#000000;}
+
+nav.top-nav ul { list-style-type: none; margin:0px; padding:0px;}
+nav.top-nav ul li { float:left; }
+nav.top-nav ul li a { padding:0.5rem 1rem; display:block; text-decoration: none; color:#ffffff;}
+nav.top-nav ul li a:hover { padding:0.5rem 1rem; display:block; background:#282828; color:#ffffff;}
+
+nav.top-nav ul li.has-dropdown ul { position:absolute; background:#000000; display:none;}
+nav.top-nav ul li.has-dropdown ul li { float:none;}
+
+nav.top-nav ul li.has-dropdown:hover > a {  background:#990000;}
+nav.top-nav ul li.has-dropdown:hover ul { position:absolute; background:#009900; display:block;}
+
+nav.top-nav.fade ul li.has-dropdown ul { display:block; max-height:0px; opacity:0; transition: opacity 2s; overflow:hidden;}
+nav.top-nav.fade ul li.has-dropdown:hover ul { position:absolute; background:#009900; display:block; opacity:1; max-height:200px;}
+
+nav.top-nav.unfold ul li.has-dropdown ul { display:block; transition: 0.5s; transform:rotateX(90deg) perspective(350px); transform-origin: 50% 0%;}
+nav.top-nav.unfold ul li.has-dropdown:hover ul { position:absolute; background:#009900; display:block; transform:rotateX(0deg) translate(0px,0%); transform-style: preserve-3d;}
