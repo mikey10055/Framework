@@ -1,0 +1,179 @@
+/* Flex Grid
+    @authers - Michael Thomas
+		- requires browser property names 
+*/
+
+/* Flex Grid */
+/**
+ * Break points
+ * 	        <= 600px / ?rem - col-mob-*
+ *   601px to 1024px / ?rem - col-tab-*
+ *  1025px to 1280px / ?rem - col-med-*
+ *  1281px to 1920px / ?rem - col-lrg-*
+ *          1920px > / ?rem - col-xlrg-*
+ *
+ */
+
+.row.flex { width:98%; max-width:80rem; margin:0px auto; clear:both; position:relative; padding:0px 1%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.row.flex .row.flex {padding:0px;}
+
+.row.flex.wide { width:100%; max-width: 100%; padding:0px 0px;}
+
+.row.flex .columns,.row.flex .column { width:100%; float:left; padding:0px 0.4%; position:relative; box-sizing: border-box;
+	align-self: auto;
+}
+.row.flex.dir-reverse {
+	 flex-direction: row-reverse;
+}
+.row.flex.dir-column{
+	 flex-direction: column;
+}
+.row.flex.dir-column-reverse{
+	 flex-direction: column-reverse;
+}
+@media only screen {
+
+	.order-mob-1 { order:1 }
+	.order-mob-2 { order:2 }
+	.order-mob-3 { order:3 }
+	.order-mob-4 { order:4 }
+	.order-mob-5 { order:5 }
+	.order-mob-6 { order:6 }
+	.order-mob-7 { order:7 }
+	.order-mob-8 { order:8 }
+	.order-mob-9 { order:9 }
+	.order-mob-10 { order:10 }
+	.order-mob-11 { order:11 }
+	.order-mob-12 { order:12 }
+
+	.col-mob-1 { width: 8.33333%; 	flex:1 0  8.33333%;}
+	.col-mob-2 { width: 16.66667%; 	flex:1 0 16.66667%;}
+	.col-mob-3 { width: 25%; 	flex:1 0 25%;}
+	.col-mob-4 { width: 33.33333%; 	flex:1 0 33.33333%;}
+	.col-mob-5 { width: 41.66667%; 	flex:1 0 41.66667%;}
+	.col-mob-6 { width:50%; 	flex:1 0 50%;}
+	.col-mob-7 { width: 58.33333%; 	flex:1 0 58.33333%;}
+	.col-mob-8 { width: 66.66667%; 	flex:1 0 66.66667%;}
+	.col-mob-9 { width: 75%; 	flex:1 0 75%;}
+	.col-mob-10 { width: 83.33333%; 	flex:1 0 83.33333%;}
+	.col-mob-11 { width: 91.66667%; 	flex:1 0 91.66667%;}
+	.col-mob-12 { width:100%; 	flex:1 0 100%;}
+}
+@media only screen and (min-width: 601px) {
+
+	.order-tab-1 { order:1 }
+	.order-tab-2 { order:2 }
+	.order-tab-3 { order:3 }
+	.order-tab-4 { order:4 }
+	.order-tab-5 { order:5 }
+	.order-tab-6 { order:6 }
+	.order-tab-7 { order:7 }
+	.order-tab-8 { order:8 }
+	.order-tab-9 { order:9 }
+	.order-tab-10 { order:10 }
+	.order-tab-11 { order:11 }
+	.order-tab-12 { order:12 }
+
+	.col-tab-1 { width: 8.33333%; 	flex:1 0  8.33333%;}
+	.col-tab-2 { width: 16.66667%; 	flex:1 0 16.66667%;}
+	.col-tab-3 { width: 25%; 	flex:1 0 25%;}
+	.col-tab-4 { width: 33.33333%; 	flex:1 0 33.33333%;}
+	.col-tab-5 { width: 41.66667%; 	flex:1 0 41.66667%;}
+	.col-tab-6 { width:50%; 	flex:1 0 50%;}
+	.col-tab-7 { width: 58.33333%; 	flex:1 0 58.33333%;}
+	.col-tab-8 { width: 66.66667%; 	flex:1 0 66.66667%;}
+	.col-tab-9 { width: 75%; 	flex:1 0 75%;}
+	.col-tab-10 { width: 83.33333%; 	flex:1 0 83.33333%;}
+	.col-tab-11 { width: 91.66667%; 	flex:1 0 91.66667%;}
+	.col-tab-12 { width:100%; 	flex:1 0 100%;}
+}
+@media only screen and (min-width: 1025px) {
+
+	.order-med-1 { order:1 }
+	.order-med-2 { order:2 }
+	.order-med-3 { order:3 }
+	.order-med-4 { order:4 }
+	.order-med-5 { order:5 }
+	.order-med-6 { order:6 }
+	.order-med-7 { order:7 }
+	.order-med-8 { order:8 }
+	.order-med-9 { order:9 }
+	.order-med-10 { order:10 }
+	.order-med-11 { order:11 }
+	.order-med-12 { order:12 }
+
+	.col-med-1 { width: 8.33333%; 	flex:1 1  8.33333%;}
+	.col-med-2 { width: 16.66667%; 	flex:1 1 16.66667%;}
+	.col-med-3 { width: 25%; 	flex:1 1 25%;}
+	.col-med-4 { width: 33.33333%; 	flex:1 1 33.33333%;}
+	.col-med-5 { width: 41.66667%; 	flex:1 1 41.66667%;}
+	.col-med-6 { width:50%; 	flex:1 1 50%;}
+	.col-med-7 { width: 58.33333%; 	flex:1 1 58.33333%;}
+	.col-med-8 { width: 66.66667%; 	flex:1 1 66.66667%;}
+	.col-med-9 { width: 75%; 	flex:1 1 75%;}
+	.col-med-10 { width: 83.33333%; 	flex:1 1 83.33333%;}
+	.col-med-11 { width: 91.66667%; 	flex:1 1 91.66667%;}
+	.col-med-12 { width:100%; 	flex:1 1 100%;}
+}
+
+@media only screen and (min-width: 1281px) {
+
+	.order-lrg-1 { order:1 }
+	.order-lrg-2 { order:2 }
+	.order-lrg-3 { order:3 }
+	.order-lrg-4 { order:4 }
+	.order-lrg-5 { order:5 }
+	.order-lrg-6 { order:6 }
+	.order-lrg-7 { order:7 }
+	.order-lrg-8 { order:8 }
+	.order-lrg-9 { order:9 }
+	.order-lrg-10 { order:10 }
+	.order-lrg-11 { order:11 }
+	.order-lrg-12 { order:12 }
+
+	.col-lrg-1 { width: 8.33333%; 	flex:1 1  8.33333%;}
+	.col-lrg-2 { width: 16.66667%; 	flex:1 1 16.66667%;}
+	.col-lrg-3 { width: 25%; 	flex:1 1 25%;}
+	.col-lrg-4 { width: 33.33333%; 	flex:1 1 33.33333%;}
+	.col-lrg-5 { width: 41.66667%; 	flex:1 1 41.66667%;}
+	.col-lrg-6 { width:50%; 	flex:1 1 50%;}
+	.col-lrg-7 { width: 58.33333%; 	flex:1 1 58.33333%;}
+	.col-lrg-8 { width: 66.66667%; 	flex:1 1 66.66667%;}
+	.col-lrg-9 { width: 75%; 	flex:1 1 75%;}
+	.col-lrg-10 { width: 83.33333%; 	flex:1 1 83.33333%;}
+	.col-lrg-11 { width: 91.66667%; 	flex:1 1 91.66667%;}
+	.col-lrg-12 { width:100%; 	flex:1 1 100%;}
+}
+@media only screen and (min-width: 1921px) {
+
+	.order-xlrg-1 { order:1 }
+	.order-xlrg-2 { order:2 }
+	.order-xlrg-3 { order:3 }
+	.order-xlrg-4 { order:4 }
+	.order-xlrg-5 { order:5 }
+	.order-xlrg-6 { order:6 }
+	.order-xlrg-7 { order:7 }
+	.order-xlrg-8 { order:8 }
+	.order-xlrg-9 { order:9 }
+	.order-xlrg-10 { order:10 }
+	.order-xlrg-11 { order:11 }
+	.order-xlrg-12 { order:12 }
+
+	.col-xlrg-1 { width: 8.33333%; 	flex:1 1  8.33333%;}
+	.col-xlrg-2 { width: 16.66667%; 	flex:1 1 16.66667%;}
+	.col-xlrg-3 { width: 25%; 	flex:1 1 25%;}
+	.col-xlrg-4 { width: 33.33333%; 	flex:1 1 33.33333%;}
+	.col-xlrg-5 { width: 41.66667%; 	flex:1 1 41.66667%;}
+	.col-xlrg-6 { width:50%; 	flex:1 1 50%;}
+	.col-xlrg-7 { width: 58.33333%; 	flex:1 1 58.33333%;}
+	.col-xlrg-8 { width: 66.66667%; 	flex:1 1 66.66667%;}
+	.col-xlrg-9 { width: 75%; 	flex:1 1 75%;}
+	.col-xlrg-10 { width: 83.33333%; 	flex:1 1 83.33333%;}
+	.col-xlrg-11 { width: 91.66667%; 	flex:1 1 91.66667%;}
+	.col-xlrg-12 { width:100%; 	flex:1 1 100%;}
+}

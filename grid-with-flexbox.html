@@ -3,15 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paradox | Grid </title>
+    <title>Paradox | Flex Grid </title>
     <link rel="stylesheet" href="css/para.css" />
     <link rel="stylesheet" href="css/independent/typography.css" />
+    <link rel="stylesheet" href="css/independent/grid-with-flexbox.css" />
     <link rel="stylesheet" href="css/independent/grid.css" />
 
     <link rel="stylesheet" href="css/helpers/colors.css" />
+    <link rel="stylesheet" href="css/helpers/spacers.css" />
 
   </head>
   <body>
+    <h1>Flex</h1>
+    <div class="row flex">
+      <div class="col-mob-12 col-tab-4 col-med-2 col-lrg-6 col-xlrg-12 columns bg-grn">
+        col-mob-12 col-tab-4 col-med-2 col-lrg-6 col-xlrg-12
+      </div>
+      <div class="col-mob-4 col-tab-8 col-med-6 col-lrg-4 col-xlrg-12 columns bg-blu txt-wht">
+        col-mob-3 col-tab-8 col-med-6 col-lrg-4 col-xlrg-12
+      </div>
+      <div class="col-mob-8 col-tab-12 col-med-4 col-lrg-2 col-xlrg-12 columns bg-red">
+        col-mob-8 col-tab-12 col-med-4 col-lrg-2 col-xlrg-12
+      </div>
+    </div>
+
+    <div class="spacer-100"></div>
+<h1>Grid</h1>
     <div class="row">
       <div class="col-mob-12 col-tab-4 col-med-2 col-lrg-6 col-xlrg-12 columns bg-grn ">
         col-mob-12 col-tab-4 col-med-2 col-lrg-6 col-xlrg-12

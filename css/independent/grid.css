@@ -23,6 +23,7 @@
 
 /* mobile */
 @media only screen {
+
 	.col-mob-1 { width: 8.33333%;}
 	.col-mob-2 { width: 16.66667%;}
 	.col-mob-3 { width: 25%;}
@@ -39,6 +40,7 @@
 
 /* Tablet */
 @media only screen and (min-width: 601px) {
+
 	.col-tab-1 { width: 8.33333%;}
 	.col-tab-2 { width: 16.66667%;}
 	.col-tab-3 { width: 25%;}
