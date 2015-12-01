@@ -6,6 +6,7 @@
 *
 *
 **/
+'use strict';
 (function(global) {
   var paradox = {
     VERSION: '0.0.1'

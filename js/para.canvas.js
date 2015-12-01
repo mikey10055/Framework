@@ -6,7 +6,7 @@
 *
 *
 **/
-
+'use strict';
 paradox.Canvas = (function() {
   var Canvas = function(selector) {
     this.ele = document.querySelector(selector);

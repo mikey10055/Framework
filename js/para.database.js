@@ -6,5 +6,5 @@
 *
 *
 **/
-
+'use strict';
 paradox.Database = {};

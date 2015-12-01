@@ -8,7 +8,7 @@
 *           -basic dom
 *
 **/
-
+'use strict';
 paradox.dom = (function(){
   var Dom = function (selector) {
       var selector = document.querySelectorAll(selector);

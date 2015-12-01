@@ -6,7 +6,7 @@
 *
 *
 **/
-
+'use strict';
 paradox.modelName = (function() {
   var modelName = function(selector) {
     this.ele = document.querySelector(selector);

@@ -7,6 +7,7 @@
 *
 *
 **/
+'use strict';
 paradox.Database = paradox.Database || {};
 paradox.Database.localStorage = (function() {
 
